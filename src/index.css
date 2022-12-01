@@ -1,0 +1,95 @@
+
+.bubbles img {
+    width: 50px;
+    animation: bubble 7s linear infinite;
+}
+
+.bubbles {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -70px;
+}
+
+@keyframes bubble {
+    0% {
+    	opacity: 0;
+        transform: translateY(0);
+    }
+    50% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+    	opacity: 0;
+        transform: translateY(-80vh);
+    }
+}
+
+.bubbles img:nth-child(1) {
+    animation-delay: 2s;
+    width: 20px;
+}
+.bubbles img:nth-child(2) {
+    animation-delay: 1s;
+    width: 30px;
+}
+.bubbles img:nth-child(3) {
+    animation-delay: 3s;
+}
+.bubbles img:nth-child(4) {
+    animation-delay: 4.5s;
+    width: 40px;
+}
+.bubbles img:nth-child(5) {
+    animation-delay: 3s;
+    width: 20px;
+}
+.bubbles img:nth-child(6) {
+    animation-delay: 6s;
+    width: 25px;
+}
+.bubbles img:nth-child(7) {
+    animation-delay: 7s;
+}
+
+.float {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+    scale: 1;
+  }
+  50% {
+    transform: translateY(-15px);
+    scale: 1.01;
+  }
+  100% {
+    transform: translateY(0px);
+    scale: 1;
+  }
+}
+
+.animate-move-left {
+  -webkit-animation: moveLeft 60s linear 0s infinite normal none;
+  animation: moveLeft 60s linear 0s infinite normal none;
+}
+
+@keyframes moveLeft {
+/*  to {
+    transform: translateX(-50%);
+  }*/
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-2000px, 0, 0);
+  }
+}
+
